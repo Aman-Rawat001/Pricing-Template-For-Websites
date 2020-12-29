@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template-01</title>
+    <style>
+        html{
+            min-height: 100%;
+        }
+        *{
+            margin: 0%;
+            box-sizing: border-box;
+            padding: 0%;
+        }
+        body{
+            background: linear-gradient(110deg, rgb(212, 212, 99) 60%, rgb(231, 231, 51) 60%);
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .innercontainer{
+            display: grid;
+            grid-gap: 1rem;
+            grid-area: auto;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            padding: 10px;
+        }
+        .innerBox{
+            height: 426px;
+            background-color: blue;
+            display: block;
+            color: white;
+            text-align: center;
+        }
+        .innerBox:hover{
+                transform: scale(1.02);  
+        }
+        .time{
+            padding: 10px;
+            margin: 10px;
+        }
+        hr.line{
+            border-color: white;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            max-width: 40px;
+            position: relative;
+            left: 141px;
+        }
+        .price{
+            margin-top: 60px;
+            margin-bottom: 60px;
+            font-size: 52px;
+        }
+        .aboutPlan{
+            margin-top: 5px;
+            margin-bottom: 5px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .btn{
+            background: none;
+            color: white;
+            border: 1px solid white;
+            padding: 7px;
+            margin-top: 45px;
+        }
+        .btn:hover{
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="innercontainer">
+        <div class="innerBox">
+            <h2 class="time">MONTHLY</h2>
+            <hr class="line">
+            <h2 class="price">$15</h2>
+            <p class="aboutPlan">2 CORE PROCESSORS</p>
+            <p class="aboutPlan">2GB TRANSFER</p>
+            <button class="btn">BUY NOW</button>
+        </div>
+
+        <div class="innerBox">
+            <h2 class="time">YEARLY</h2>
+            <hr class="line">
+            <h2 class="price">$32</h2>
+            <p class="aboutPlan">2 CORE PROCESSORS</p>
+            <p class="aboutPlan">2GB TRANSFER</p>
+            <button class="btn">BUY NOW</button>
+        </div>
+
+        <div class="innerBox">
+            <h2 class="time">TWO YEAR</h2>
+            <hr class="line">
+            <h2 class="price">$99</h2>
+            <p class="aboutPlan">2 CORE PROCESSORS</p>
+            <p class="aboutPlan">2GB TRANSFER</p>
+            <button class="btn">BUY NOW</button>
+        </div>
+
+        <div class="innerBox">
+            <h2 class="time">THREE YEAR</h2>
+            <hr class="line">
+            <h2 class="price">$149</h2>
+            <p class="aboutPlan">2 CORE PROCESSORS</p>
+            <p class="aboutPlan">2GB TRANSFER</p>
+            <button class="btn">BUY NOW</button>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
